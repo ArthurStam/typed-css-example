@@ -17,7 +17,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
+        test: /\.module.css$/,
         use: [
           MiniCssExtractPlugin.loader,
           {
@@ -26,9 +26,6 @@ module.exports = {
               esModule: true,
               modules: {
                 namedExport: true,
-                auto: (resourcePath) => {
-                  return !resourcePath.includes("node_modules");
-                },
               },
             },
           },

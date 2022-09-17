@@ -13,7 +13,6 @@
       {
         "name": "typescript-plugin-css-modules",
         "options": {
-          "customMatcher": "\\.css$",
           "customTemplate": "./customTemplate.js"
         }
       }
